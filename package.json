@@ -1,9 +1,8 @@
 {
-  "name": "gql-service",
+  "name": "@baidu/gql-service",
   "version": "15.1.0",
   "description": "A Query Language and Runtime which can target any service.",
   "license": "MIT",
-  "private": true,
   "main": "index",
   "module": "index.mjs",
   "types": "index.d.ts",
@@ -45,7 +44,8 @@
     "build:npm": "node resources/build-npm.js",
     "build:deno": "node resources/build-deno.js",
     "gitpublish:npm": "bash ./resources/gitpublish.sh npm npmDist",
-    "gitpublish:deno": "bash ./resources/gitpublish.sh deno denoDist"
+    "gitpublish:deno": "bash ./resources/gitpublish.sh deno denoDist",
+    "deploy": "npm publish --registry=http://registry.npm.baidu-int.com"
   },
   "dependencies": {},
   "devDependencies": {
